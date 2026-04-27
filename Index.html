@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaku | Premium Home Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #C5A059; /* Warna Emas */
+            --dark: #1A1A1A;    /* Charcoal */
+            --light: #FFFFFF;
+            --bg: #FAFAFA;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
+            color: white;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 10vw, 5rem);
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero-sub {
+            font-size: 1.1rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            border-radius: 2px;
+            font-size: 0.9rem;
+        }
+
+        .cta-button:hover {
+            background-color: #b08d4a;
+            transform: translateY(-3px);
+        }
+
+        /* Content Section */
+        .container {
+            max-width: 1100px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 50px 30px;
+            text-align: center;
+            transition: 0.4s;
+            border: 1px solid #eee;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            padding: 80px 20px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SPAKU</h1>
+        <p class="hero-sub">PREMIUM HOME SERVICE</p>
+        <a href="https://wa.me/6281234567890" class="cta-button">BOOK APPOINTMENT</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Luxury Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Signature Massage</h3>
+                <p>Relaksasi mendalam untuk memulihkan energi tubuh Anda.</p>
+            </div>
+            <div class="service-card">
+                <h3>Aromatherapy</h3>
+                <p>Kombinasi minyak esensial premium untuk ketenangan jiwa.</p>
+            </div>
+            <div class="service-card">
+                <h3>Body Scrub</h3>
+                <p>Perawatan kulit menyeluruh agar tetap sehat dan bersinar.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="color: white; margin-bottom: 10px; font-size: 1.2rem; font-family: 'Playfair Display';">SPAKU</p>
+        <p>&copy; 2026 SPAKU BALI. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+</body>
+</html>
